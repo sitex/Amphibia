@@ -95,7 +95,7 @@ struct ContactCard: View {
             HStack(spacing: 16) {
                 Image(systemName: icon)
                     .font(.title)
-                    .foregroundStyle(.accentColor)
+                    .foregroundStyle(Color.accentColor)
                     .frame(width: 44)
 
                 VStack(alignment: .leading, spacing: 4) {
