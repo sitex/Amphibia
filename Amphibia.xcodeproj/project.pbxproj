@@ -13,6 +13,10 @@
 		A1000004001 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000004000 /* ProjectsView.swift */; };
 		A1000005001 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000005000 /* ContactsView.swift */; };
 		A1000006001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1000006000 /* Assets.xcassets */; };
+		A1000007001 /* CompanyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000007000 /* CompanyInfo.swift */; };
+		A1000008001 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000008000 /* Project.swift */; };
+		A1000009001 /* ProjectCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000009000 /* ProjectCategory.swift */; };
+		A100000A001 /* ProjectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000A000 /* ProjectDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		A1000004000 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		A1000005000 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		A1000006000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1000007000 /* CompanyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyInfo.swift; sourceTree = "<group>"; };
+		A1000008000 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		A1000009000 /* ProjectCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCategory.swift; sourceTree = "<group>"; };
+		A100000A000 /* ProjectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				A1000004000 /* ProjectsView.swift */,
+				A100000A000 /* ProjectDetailView.swift */,
 			);
 			path = Projects;
 			sourceTree = "<group>";
@@ -102,6 +111,9 @@
 		A10000G0007 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A1000007000 /* CompanyInfo.swift */,
+				A1000008000 /* Project.swift */,
+				A1000009000 /* ProjectCategory.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -188,6 +200,10 @@
 				A1000003001 /* HomeView.swift in Sources */,
 				A1000004001 /* ProjectsView.swift in Sources */,
 				A1000005001 /* ContactsView.swift in Sources */,
+				A1000007001 /* CompanyInfo.swift in Sources */,
+				A1000008001 /* Project.swift in Sources */,
+				A1000009001 /* ProjectCategory.swift in Sources */,
+				A100000A001 /* ProjectDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
