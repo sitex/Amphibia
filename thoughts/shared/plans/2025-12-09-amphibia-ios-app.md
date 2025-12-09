@@ -336,8 +336,8 @@ struct CompanyInfo {
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] Project builds with all models: `xcodebuild build`
-- [ ] All 15 projects are defined in `Project.allProjects`
+- [ ] Project builds with all models: `xcodebuild build` (requires macOS)
+- [x] All 15 projects are defined in `Project.allProjects`
 
 #### Manual Verification:
 - [ ] Models compile without errors
