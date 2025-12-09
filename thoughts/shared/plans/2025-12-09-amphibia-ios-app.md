@@ -839,6 +839,64 @@ Add app icons, accent colors, and finalize styling.
 
 ---
 
+## Phase 5: Project Images
+
+### Overview
+Add project images to the app - download available images from the website and create branded placeholders for the rest.
+
+### Changes Required:
+
+#### 1. Create Image Assets
+**Directory**: `Amphibia/Assets.xcassets/Projects/`
+
+Create imageset folders for all 15 projects:
+- `halyk-bank.imageset` - Real image from amphibia.kz
+- `manga-sushi.imageset` - Real image from amphibia.kz
+- `fincraft.imageset` - Placeholder
+- `malevich.imageset` - Placeholder
+- `zardozi.imageset` - Placeholder
+- `saks.imageset` - Placeholder
+- `viled.imageset` - Placeholder
+- `bazis.imageset` - Placeholder
+- `bazis-ru.imageset` - Placeholder
+- `jazz.imageset` - Placeholder
+- `atasu.imageset` - Placeholder
+- `kcp.imageset` - Placeholder
+- `keruen.imageset` - Placeholder
+- `smartfacade.imageset` - Placeholder
+- `xo-silk-road.imageset` - Placeholder
+
+**Image source URLs**:
+- `https://amphibia.kz/storage/app/media/Halyk_1_2.jpg`
+- `https://amphibia.kz/storage/app/media/Manga_1_2.jpg`
+
+#### 2. Update Views to Display Images
+**Files**:
+- `HomeView.swift` - FeaturedProjectCard
+- `ProjectsView.swift` - ProjectCard
+- `ProjectDetailView.swift` - Hero image
+
+Replace placeholder rectangles with:
+```swift
+Image(project.imageName)
+    .resizable()
+    .aspectRatio(contentMode: .fill)
+    .clipShape(RoundedRectangle(cornerRadius: 12))
+```
+
+### Success Criteria:
+
+#### Automated Verification:
+- [x] All 15 image assets exist in Assets.xcassets/Projects
+- [x] Views updated to use Image() instead of placeholders
+
+#### Manual Verification:
+- [x] Project images display correctly in all views
+- [x] Halyk Bank and Manga Sushi show real photos
+- [x] Placeholder images show project name on brand color
+
+---
+
 ## Testing Strategy
 
 ### Unit Tests:
@@ -866,6 +924,12 @@ Amphibia/
 ├── Amphibia/
 │   ├── AmphibiaApp.swift
 │   ├── Assets.xcassets/
+│   │   ├── AppIcon.appiconset/
+│   │   ├── AccentColor.colorset/
+│   │   └── Projects/
+│   │       ├── halyk-bank.imageset/
+│   │       ├── manga-sushi.imageset/
+│   │       └── ... (15 project imagesets)
 │   ├── Models/
 │   │   ├── CompanyInfo.swift
 │   │   ├── Project.swift
