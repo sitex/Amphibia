@@ -7,14 +7,11 @@ struct ProjectDetailView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 24) {
                 // Hero Image
-                RoundedRectangle(cornerRadius: 16)
-                    .fill(Color.gray.opacity(0.2))
+                Image(project.imageName)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
                     .aspectRatio(16/9, contentMode: .fit)
-                    .overlay {
-                        Image(systemName: project.category.icon)
-                            .font(.system(size: 60))
-                            .foregroundStyle(.secondary)
-                    }
+                    .clipShape(RoundedRectangle(cornerRadius: 16))
 
                 VStack(alignment: .leading, spacing: 16) {
                     // Category Badge

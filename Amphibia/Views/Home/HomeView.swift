@@ -75,14 +75,11 @@ struct FeaturedProjectCard: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            RoundedRectangle(cornerRadius: 12)
-                .fill(Color.gray.opacity(0.2))
+            Image(project.imageName)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
                 .frame(width: 200, height: 120)
-                .overlay {
-                    Image(systemName: project.category.icon)
-                        .font(.largeTitle)
-                        .foregroundStyle(.secondary)
-                }
+                .clipShape(RoundedRectangle(cornerRadius: 12))
 
             Text(project.name)
                 .font(.headline)
